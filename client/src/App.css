@@ -1,49 +1,79 @@
 .App {
-  font-family:Avenir, "Century Gothic", sans-serif;
-  font-weight:100; 
-  font-style:normal;
+  font-family: Avenir, "Century Gothic", sans-serif;
+  font-weight: 300; 
+  font-style: normal;
   font-size: calc(10px + 2vmin);
   color: white;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.962);
-  padding:20px;
+  background-color: #0c1927;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), 
+                    url('https://images.unsplash.com/photo-1546617771-725919a2d254?q=80&w=2070');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 30px 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  min-height: 100vh;
 }
 
-.header{
+.header {
   width: 100%;
-  color:white;
+  color: white;
   text-align: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #3498db;
+}
+
+.header h1 {
+  text-shadow: 0 0 15px #3498db;
+  font-size: 42px;
+  margin-bottom: 15px;
 }
 
 .headerBtn {
-  margin-bottom: 50px;
-  margin-right: 10px;
+  margin-bottom: 30px;
+  margin-right: 15px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.headerBtn:hover {
+  background-color: #2980b9;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(52, 152, 219, 0.5);
 }
 
 .ReadPosts {
   display: grid;
   grid-auto-flow: row;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 button {
   border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 15px;
+  border: 1px solid #3498db;
+  padding: 0.8em 1.5em;
+  font-size: 16px;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
-  color:white;
+  color: white;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: all 0.25s;
 }
+
 button:hover {
-  border-color: #646cff;
+  border-color: #3498db;
+  background-color: #3498db;
+  box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
 }
