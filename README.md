@@ -49,8 +49,8 @@ The following **required** functionality is completed:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='hockey1.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-<img src='hockey2.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='music.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 
 
 
